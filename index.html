@@ -22,20 +22,20 @@
       font-family: Arial, sans-serif;
       color: #fff;
       overflow: hidden;
-      padding: 20px; /* Add padding to avoid touching screen edges on smaller devices */
+      padding: 20px; /* Padding for smaller devices */
     }
 
-    /* Centered Text */
+    /* Centered Text Container with Responsive Styling */
     .thank-you-container {
       text-align: center;
-      padding: 20px; /* Extra padding to keep the text away from the side borders */
+      padding: 20px;
+      max-width: 90%; /* Ensures the text stays away from screen edges */
       animation: fadeIn 3s ease-in-out;
-      max-width: 80%; /* Restricts width so that text doesn't stretch edge-to-edge */
     }
 
-    /* Beautiful Typography */
+    /* Typography Adjustments */
     h1 {
-      font-size: 4rem;
+      font-size: 3rem;
       font-weight: bold;
       letter-spacing: 0.1em;
       margin-bottom: 1rem;
@@ -43,9 +43,21 @@
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       font-weight: 300;
       letter-spacing: 0.05em;
+      line-height: 1.5;
+    }
+
+    /* Responsive Typography */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.5rem; /* Slightly smaller on small screens */
+      }
+
+      p {
+        font-size: 1.1rem; /* Slightly smaller on small screens */
+      }
     }
 
     /* Animation Keyframes */
