@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Background */
+    body, html {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      font-family: Arial, sans-serif;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    /* Centered Text */
+    .thank-you-container {
+      text-align: center;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    /* Beautiful Typography */
+    h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 300;
+      letter-spacing: 0.05em;
+    }
+
+    /* Animation Keyframes */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="thank-you-container">
+    <h1>Спасибо!</h1>
+    <p>Мы ценим вашу доброту и поддержку.</p>
+  </div>
+
+  <script>
+    // Small JS animation for a gentle hover effect on the text
+    document.querySelector(".thank-you-container").addEventListener("mouseover", () => {
+      document.querySelector(".thank-you-container").style.transform = "scale(1.02)";
+    });
+
+    document.querySelector(".thank-you-container").addEventListener("mouseout", () => {
+      document.querySelector(".thank-you-container").style.transform = "scale(1)";
+    });
+  </script>
+</body>
+</html>
